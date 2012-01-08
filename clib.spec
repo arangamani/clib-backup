@@ -1,13 +1,16 @@
 Name:           clib
-Version:        0.2.99
+Version:        0.2.3
 Release:        1%{?dist}
-Summary:        Development files for the clib library
+Summary:        A library for advanced C functions
 
 Group:          Development/Libraries
-License:        2-clause BSD
-URL:            http://github.com/tonnerre/clib/
-Source0:        clib-%{version}.tar.bz2
+License:        BSD
+URL:            https://github.com/arangamani/clib
+Source:         https://github.com/downloads/arangamani/clib/clib-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+BuildRequires:  glibc
+BuildRequires:  libtool
+Requires:  f2c
 
 %description
 clib is a development library which provides the end user with hashes,
@@ -61,15 +64,15 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
-* Wed Jul 29 2009 - tonnerre.lombard@sygroup.ch
-- Bump revision after release of version 0.2.
+* Sat Jan  7 2012 - Arangamanikkannan Manickam <arangamani.kannan@gmail.com> - 0.2.3-1
+- Release for Fedora
+
+* Wed Jul 29 2009 - Tonnerre Lombard <tonnerre.lombard@sygroup.ch> - 0.2.2-1
 - Added destructors to the array API to match the hash API.
 
-* Tue Jul 28 2009 - tonnerre.lombard@sygroup.ch
+* Tue Jul 28 2009 - Tonnerre Lombard <tonnerre.lombard@sygroup.ch> - 0.2.1-1
 - Added function to convert host:port strings to socket addresses for
   connect, bind etc.
 
-* Tue Jul 21 2009 - tonnerre.lombard@sygroup.ch
+* Tue Jul 21 2009 - Tonnerre Lombard <tonnerre.lombard@sygroup.ch> - 0.2.0-1
 - Initial release for RedHat
-- Corrected return types for default hash functions
-- Fixed array implementation
