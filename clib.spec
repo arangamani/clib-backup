@@ -32,6 +32,7 @@ developing applications that use %{name}.
 
 
 %build
+sh autogen.sh
 %configure --disable-static
 make %{?_smp_mflags}
 

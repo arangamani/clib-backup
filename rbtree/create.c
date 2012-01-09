@@ -75,6 +75,7 @@ c_rbtree_destroy(struct c_rbtree *t)
 	 * FIXME: Not sure this is enough, should be checked with a memory
 	 * leak tester.
 	 */
-	c_rbtree_remove_all(t);
+	//The following function couldn't be referenced and hence removed. Will be tested and defined if needed.
+	//c_rbtree_remove_all(t);
 	free(t);
 }
