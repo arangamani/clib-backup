@@ -65,7 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
-* Sat Jan  7 2012 - Arangamanikkannan Manickam <arangamani.kannan@gmail.com> - 0.2.3-1
+* Sun Jan  8 2012 - Arangamanikkannan Manickam <arangamani.kannan@gmail.com> - 0.2.3-1
 - Release for Fedora
 
 * Wed Jul 29 2009 - Tonnerre Lombard <tonnerre.lombard@sygroup.ch> - 0.2.2-1
