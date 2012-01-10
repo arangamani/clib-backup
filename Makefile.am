@@ -1,4 +1,4 @@
-SUBDIRS=	array hash net rbtree t include/clib
+SUBDIRS=	array hash net rbtree doc t include/clib
 lib_LTLIBRARIES=	libclib.la
 libclib_la_SOURCES=
 libclib_la_LIBADD=	${top_builddir}/hash/libhash.la		\
