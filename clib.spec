@@ -9,6 +9,7 @@ URL:            https://github.com/arangamani/clib
 Source:         https://github.com/downloads/arangamani/clib/clib-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  glibc
+BuildRequires:  autoconf
 BuildRequires:  libtool
 Requires:  f2c
 
@@ -54,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root,-)
-%doc
+%doc README INSTALL ChangeLog
 %{_libdir}/*.so.*
 
 %files devel
