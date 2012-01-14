@@ -1,0 +1,26 @@
+clib - A Library for providing advanced C functions
+
+Installing this program requires the following packages.
+-- autoconf
+-- glibc
+-- libtool
+
+The functioning of this program requires the following package:
+-- f2c
+
+The packages here are referred as *fedora* packages. It is the user's responsibility to find the package for their distribution.
+
+To configure:
+./autogen-sh
+./configure
+
+To install:
+make
+
+Test programs:
+
+There are some test programs available in tests/
+
+
+--
+Arangamanikkannan Manickam <arangamani.kannan@gmail.com>
